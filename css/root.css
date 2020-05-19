@@ -1,0 +1,158 @@
+/* Font Face */
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Playfair_Display';
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Genericons';
+    src: url('../fonts/Genericons/genericons-regular-webfont.woff')format('woff'),
+    url('fonts/genericons-regular-webfont.eot')format('truetype');
+}
+
+/* Variables */
+:root {
+    --primary-font: 'PlayfairDisplay-Regular';
+    --secondary-font: 'Playfair_Display';
+
+    --white-color: #fff;
+    --brown-color: rgb(158, 139, 139);
+    --yellow-color: rgb(235, 250, 29);
+
+    --dark-bg-color: rgb(143, 136, 136);
+    --offwhite-bg-color: rgb(240, 232, 232);
+
+    --shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+    --box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--secondary-font);
+    color: var(--offwhite-bg-color);
+}
+
+/* Main Style */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: rgb(163, 154, 154); */
+    background: linear-gradient(to right, #3C3B3F, #605C3C);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid dodgerblue;
+}
+
+/* Buttons */
+.btnPrimary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(143, 136, 136, 0.5);
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-family: 'LatoRegular';
+    transition: 0.3s;
+}
+
+.btnPrimary:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+.btnPrimary:focus,
+.btnSecondary:focus {
+    outline: none;
+}
+
+/* Headings */
+h1.section-title,
+h1.title {
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: var(--shadow);
+}
+
+/* Fonts Style */
+.text-yellow {
+    color: var(--yellow-color);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Forms */
+input, 
+textarea {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 0.4px solid #888;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    color: #000;
+}
+
+input {
+    height: 30px;
+}
+

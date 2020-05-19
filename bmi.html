@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCalc | BMI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+<body>
+    <div class="container">
+        <a href="#home" class="logo"><h1><span class="text-yellow">H</span>C</h1></a>
+        <br>
+
+
+        <i class="fas fa-child"></i>
+        <h1 class="title">Body Mass Index</h1>
+        <div class="col-xs-8 col-sm-8 col-md-6">
+
+            <div class="form-control"> 
+                <label for="weight">Your Weight (kg)</label>
+                <input type="number" name="weight" id="weight" placeholder="Enter your weight...">
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="height">Your Height (cm)</label>
+                <input type="number" name="height" id="height" placeholder="Enter your height...">
+            </div>  
+            <br>
+
+            <p><small id="warning" class="warningMessage"></small></p>
+
+            <div class="button-column">
+                <button id="btn" onclick="calculateBMI()" class="btnPrimary calculate">Calculate</button>
+                <button id="btn" onclick="clearField()" class="btnPrimary">Reset</button>
+            </div>
+        
+        <div class="conc">
+            <div id="result"></div>
+            <p id="conclusion"></p>
+        </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/bmi.js"></script>
+</body>
+</html>

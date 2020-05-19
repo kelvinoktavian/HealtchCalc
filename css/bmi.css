@@ -1,0 +1,58 @@
+@import 'root.css';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    margin: 5% auto;
+    text-align: center;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 30px;
+    /* background: rgba(143, 136, 136, 0.7); */
+    background: #000;
+    box-shadow: var(--box-shadow);
+}
+
+.btnPrimary {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h1.title {
+    font-size: 3rem;
+}
+
+.form-control label {
+    text-align: left !important;
+    font-family: 'RobotoLight';
+}
+
+.button-column {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.warningMessage {
+    color: rgb(252, 61, 61);
+    font-family: 'RobotoRegular';
+}
+
+.form-control input {
+    width: 50%;
+}
+
+i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.container .conc {
+    margin: 20px auto;
+}
+

@@ -1,0 +1,136 @@
+@import 'root.css';
+
+body {
+    background: url('../img/loginbg/loginbg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+    height: 100%;
+    box-shadow: inset 0px 0px 400px 80px#000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container h1 {
+    font-size: 3rem;
+    text-shadow: var(--shadow);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.container h1:hover {
+    transform: scale(1.05);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container button {
+    font-size: 1.2rem;
+}
+
+.container p.info {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.container p.info span:hover {
+    opacity: 0.5;
+}
+
+/* Form Grid */
+.container .login-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.container .form-border {
+    border-left: 5px solid #fff;
+    background: rgba(143, 136, 136, 0.5);
+}
+
+/* Form Style */
+form {
+    padding: 30px 30px;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+form:hover {
+    background: rgba(196, 192, 192, 0.4);
+}
+
+/* Style the input container */
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+  
+/* Style the form icons */
+.icon {
+    padding: 10px;
+    background: rgb(163, 154, 154);
+    color: white;
+    height: 32px;
+    text-align: center;
+}
+  
+/* Style the input fields */
+.input-field {
+    border-radius: 0;
+    border: 1px solid rgb(163, 154, 154);
+    width: 100%;
+    height: 32px;
+    padding: 10px;
+    outline: none;
+}
+  
+/* Media Queries */
+@media(max-width: 700px) {
+    .container {
+        padding: 50px 0;
+        height: 100%;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        margin-top: -10px;
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .container label,
+    .container button {
+        font-size: 0.8rem;
+    }
+
+    .container .login-column {
+        grid-template-columns: 1fr;
+    }
+
+    .container .form-border {
+        border: none;
+    }
+
+    form {
+        padding: 30px;
+    }
+}
